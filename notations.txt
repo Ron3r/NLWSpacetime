@@ -1,0 +1,84 @@
+// Iniciar o npm na pasta server.
+npm init -y
+
+// Instalar typescript como dependência de desenvolvimento - pasta server
+npm i typescript -D
+npm i @types/node -D
+
+// iniciar o typescript
+npx tsc --init
+
+--Editar no tsconfig.json 
+"target": "es2016", para "target": "es2020",
+
+//Para executar o npm run dev
+npm i tsx -D
+
+//Criar/alterar o script de inicialização, comando watch é para manter ativo no terminal
+"dev": "tsx watch src/server.ts"
+
+//framework fastify como produção
+npm i fastify
+
+//windows + . abre emojis
+
+//Eslint - padrão para desenvolvimento, utilização de ", ', ;...
+npm install eslint -D
+
+//Padrão de config da rocketseat para o eslint
+npm i @rocketseat/eslint-config -D
+
+//instalar o prisma como dep. desenv.
+npm i prisma -D
+
+//config prisma para SQLite
+npx prisma init --datasource-provider SQLite
+
+//Para criar as tabelas/alterar do prisma no BD
+npx prisma migrate dev
+
+//ferramente de navegação do bd prisma
+npx prisma studio
+
+//client prisma - produção
+npm i @prisma/client
+
+npm i zod
+
+//
+npm i @fastify/cors
+-------------------------------ambiente web
+//Criação do front com o Next.js
+npx create-next-app@latest web --user-npm
+
+//Padrão de config da rocketseat para o eslint
+npm i @rocketseat/eslint-config -D
+
+npm i prettier-plugin-tailwindcss -D
+
+//Pacotes de ícones
+npm i lucide-react
+
+-------------------------------ambiente mobo
+//iniciar o projeto
+npm run start
+//Criar projeto inicial
+npx create-expo-app mobile
+
+//para utilizar o tailwind no mobo
+npm i nativewind
+npm i tailwindscss -D
+npx tailwindcss init
+
+//eslint (padronização do código)
+npm i @rocketseat/eslint-config -D
+
+npm i prettier-plugin-tailwindcss -D
+
+//Instalação das fontes do Google https://github.com/expo/google-fonts
+npx expo install @expo-google-fonts/roboto @expo-google-fonts/bai-jamjuree expo-font
+
+//utilização de svg https://github.com/kristerkari/react-native-svg-transformer
+npx expo install react-native-svg
+
+npm i react-native-svg-transformer -D
